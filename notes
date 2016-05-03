@@ -13,6 +13,7 @@ A user should be able to
 
 # ========
 URLS
+GET / # => Welcome Page
 GET /shirts
 POST /shirts
 GET /shirts/new
