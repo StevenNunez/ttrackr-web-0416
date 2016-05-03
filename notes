@@ -1,0 +1,34 @@
+A user should be able to
+  Shirts(name, source_url, has_many tags, has_many lessons)
+    See their shirts
+    See a specific shirt
+    create a new shirt
+    update a shirt
+    delete a shirt
+  Lessons(topic, info, has_many shirts)
+    CRUD lessons
+
+  Tags(name)
+    Created when adding a shirt
+
+# ========
+URLS
+GET /shirts
+POST /shirts
+GET /shirts/new
+GET /shirts/:id
+GET /shirts/:id/edit
+PATCH /shirts/:id
+DELETE/shirts/:id
+
+shirts
+-------
+id, name source_url image_url
+
+tags
+------
+id, name
+
+classifications
+----------
+id, shirt_id, tag_id
