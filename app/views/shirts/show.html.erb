@@ -1,5 +1,11 @@
 <h1><%= @shirt.name %></h1>
 
 Buy it at <%= @shirt.source_url %>
+<h3>Tags</h3>
+<ul>
+  <% @shirt.tags.each do |tag| %>
+    <li><%= tag.name %></li>
+  <% end %>
+</ul>
 
 <%= image_tag @shirt.image_url %>

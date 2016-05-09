@@ -1,0 +1,21 @@
+<h1>Add a new shirt</h1>
+
+<%= form_for @shirt do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :source_url %>
+    <%= f.url_field :source_url %>
+  </div>
+
+  <div>
+    <%= f.label :image_url %>
+    <%= f.url_field :image_url %>
+  </div>
+  <div>
+    <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
+  </div>
+  <%= f.submit %>
+<% end %>

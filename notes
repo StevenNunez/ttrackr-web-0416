@@ -1,7 +1,7 @@
 A user should be able to
   Shirts(name, source_url, has_many tags, has_many lessons)
-    See their shirts
-    See a specific shirt
+    💪 See their shirts
+    💪 See a specific shirt
     create a new shirt
     update a shirt
     delete a shirt
@@ -33,3 +33,22 @@ id, name
 classifications
 ----------
 id, shirt_id, tag_id
+
+
+New Shirts form
+name Required
+source_url required
+image_url required
+
+checkboxes for Tags
+
+One text field for a custom one
+
+###### TODO
+Add Validation for shirt fields
+Add ability to add new tag
+Add Tag show page
+Add Tag index page
+Filter by tag on shirts index page
+
+QjRtVnp2Rmx3S01Sdmg1MFhWeldKSFRsUllaTUhIVHQ4YkR5ZldSVkY3bXJndWlJWVRmRWJ6SytHSCs3VnBkb1NjdXM5WDlSaFU5MUhEOE53c1oyclZReXB1SjJIV3h4Mktyb1BBSTN4MGZ2OVB2ODFJYWVPd2lKOUFMYVBLTGJJdHJzeCttRjgyeHY2NGJ2WkNPZDdnPT0tLTZkSlU4dkRwVVdnRTBTczErcDdFdGc9PQ
