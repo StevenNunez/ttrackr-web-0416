@@ -1,0 +1,8 @@
+<h1>Create an account</h1>
+<%= form_for @user, url: sign_up_path do |f| %>
+  <%= f.text_field :username , placeholder: "Enter a username" %>
+  <%= f.text_field :email , placeholder: "Enter an email address" %>
+  <%= f.password_field :password, placeholder: "Enter a password" %>
+  <%= f.password_field :password_confirmation, placeholder: "Confirm your damn password" %>
+  <%= f.submit %>
+<% end %>
