@@ -1,3 +1,4 @@
+<%= render 'shared/errors', form_object: @user %>
 <h1>Create an account</h1>
 <%= form_for @user, url: sign_up_path do |f| %>
   <%= f.text_field :username , placeholder: "Enter a username" %>

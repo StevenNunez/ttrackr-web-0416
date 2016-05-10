@@ -1,4 +1,5 @@
 class ShirtsController < ApplicationController
+  before_action :authenticated_only, only: [:new, :create]
   def index
     @shirts = Shirt.all
   end

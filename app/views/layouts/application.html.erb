@@ -12,10 +12,11 @@
   <ul class="list-inline">
     <li><%= link_to "All Shirts", shirts_path  %></li>
   </ul>
+
   <% if logged_in? %>
-    Welcome, <%= current_user.username %>
+    Welcome, <%= current_user.username %> | <%= link_to "Sign out", sign_out_path, method: :delete %>
   <% else %>
-    We're in closed beta, because we don't know how to make users yet
+    <%= link_to "Sign In", sign_in_path %> | <%= link_to "Sign up", sign_up_path %>
   <% end %>
   <% if flash[:notice] %>
     <div class="alert alert-success">
